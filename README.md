@@ -30,7 +30,26 @@ The data provided is in **JSON format**, and it is efficiently loaded into a Pan
 
 ### Word Cloud
 
-![Word Cloud Placeholder](wordcloud_top_40.png)
+![Word Cloud](wordcloud_top_40.png)
+
+
+### Complaint Length
+
+![Complaint Length](complaint-length.png)
+
+
+---
+
+## Topic Modeling
+
+| Topic | Count | Label                      | Top Words                                                                                                           |
+|-------|-------|----------------------------|--------------------------------------------------------------------------------------------------------------------|
+| 0     | 5787  | Bank account services       | account, check, bank, chase, money, deposit, fund, close, tell, branch, open, say, chase bank, day, transaction, checking, transfer, claim, close account, number |
+| 1     | 6134  | Credit card / Prepaid card  | card, charge, credit card, credit, chase, dispute, purchase, use, receive, merchant, chase credit card, transaction, refund, service, chase credit card, company, fraud, tell, say, pay |
+| 2     | 4132  | Mortgages / Loans           | loan, mortgage, chase, home, modification, property, letter, send, document, year, foreclosure, request, time, sale, receive, house, rate, tell, pay, loan modification |
+| 3     | 2535  | Theft / Dispute reporting   | report, credit, inquiry, credit report, hard, remove, hard inquiry, inquiry credit, account, inquiry credit report, bureau, debt, credit bureau, reporting, score, card, information, hard inquiry credit, hard inquiry credit report, identity |
+| 4     | 2564  | Others                      | payment, pay, late, make, fee, balance, make payment, month, late payment, late fee, statement, payment make, account, monthly, chase, credit, payment chase, time, day, auto |
+
 
 ---
 
@@ -52,9 +71,16 @@ Logistic Regression outperformed the other models across all key metrics, demons
 3. **Naive Bayes** - Moderate performance with a balance of precision and recall.
 4. **Decision Tree** - Lowest performance, prone to overfitting, resulting in lower generalization.
 
-### Model Performance Table
+### Model Performance Summary
 
-![Model Performance Placeholder](performance_summary.png)
+| Model               | Accuracy | Precision | Recall  | F1-score* | ROC AUC | Confidence |
+|--------------------|----------|-----------|---------|----------|---------|------------|
+| Logistic Regression| 0.9618    | 0.9624    | 0.9618  | 0.9617   | 0.9987  | 0.8623     |
+| Random Forest      | 0.8849    | 0.8894    | 0.8849  | 0.8831   | 0.9899  | 0.6782     |
+| Naive Bayes        | 0.8705    | 0.8712    | 0.8705  | 0.8685   | 0.9830  | 0.7967     |
+| Decision Tree      | 0.8204    | 0.8204    | 0.8204  | 0.8203   | 0.8831  | 1.0000     |
+
+*sorted on F1-score
 
 ---
 
