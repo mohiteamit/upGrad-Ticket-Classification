@@ -1,6 +1,6 @@
-# Customer Support Ticket Classification using NLP
+# upGrad - Customer Support Ticket Classification using NLP
 
-## 0. Introduction
+## Introduction
 
 This project aims to automate customer support ticket classification for a financial company using NLP techniques. The objective is to classify unstructured customer complaints into predefined categories to streamline the support process. The categories include:
 
@@ -26,7 +26,7 @@ The data provided is in **JSON format**, and it is efficiently loaded into a Pan
 
 ---
 
-## 1. Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 ### Word Cloud
 
@@ -34,7 +34,7 @@ The data provided is in **JSON format**, and it is efficiently loaded into a Pan
 
 ---
 
-## 2. Model Performance Summary
+## Model Performance Summary
 
 The following models were trained to classify the customer complaints:
 
@@ -58,14 +58,14 @@ Logistic Regression outperformed the other models across all key metrics, demons
 
 ---
 
-## 3. Conclusion
+## Conclusion
 
 The Logistic Regression model was selected as the best-performing model due to its high accuracy and robust generalization capabilities. Future improvements could include hyperparameter tuning and exploring deep learning approaches for further enhancements.
 
 ---
 
-## 4. How to Run
+## Requirements
 
-1. Install the required dependencies using:  
+Install the required dependencies using:  
    ```bash
    pip install -r requirements.txt
