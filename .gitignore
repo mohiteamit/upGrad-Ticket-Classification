@@ -3,6 +3,10 @@
 
 # Specific file exclude
 *.pkl
+complaint1.json
+complaint2.json
+complaint3.json
+complaint4.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
